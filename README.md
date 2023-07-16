@@ -1,4 +1,4 @@
-# iMaterialist 2020 - 1st Place Solution
+# iMaterialist 2020 - 1st Place Solution Modified
 
 ![](https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F853978%2F378129d2e9afb90bbd1f320858b9b73b%2Fimat2020_2.jpg?generation=1591441185889910&alt=media)
 
