@@ -1,0 +1,14 @@
+Cython
+matplotlib
+opencv-python-headless
+pyyaml
+Pillow
+git+https://github.com/cocodataset/cocoapi#egg=pycocotools&subdirectory=PythonAPI
+scikit-learn
+pandas
+tqdm
+
+# TPU
+google-api-python-client
+oauth2client
+gcsfs

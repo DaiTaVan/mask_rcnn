@@ -1,0 +1,4 @@
+tf_tpu_models/official/detection/executor/tpu_executor.py line 143
+tf_tpu_models/official/detection/main.py line 106,107,205
+tools/datasets/create_coco_tf_record.py line 43, 44
+tf_tpu_models/official/detection/modeling/base_model.py line 377, 378, 379
