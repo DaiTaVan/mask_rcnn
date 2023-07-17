@@ -41,7 +41,7 @@ import numpy as np
 import PIL.Image
 
 import sys
-sys.path.append('/media/tavandai/MAIN_WORKING_UBUNTU/Startup/image tagging/datasets/imaterialist-fashion-2021-fgvc8/kaggle-imaterialist2020-model')
+sys.path.append('/media/tavandai/MAIN_WORKING_UBUNTU/Startup/image_tagging/datasets/imaterialist-fashion-2021-fgvc8/mask_rcnn')
 from pycocotools import mask
 from research.object_detection.utils import dataset_util
 from research.object_detection.utils import label_map_util
