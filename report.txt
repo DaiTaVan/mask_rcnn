@@ -1,0 +1,5 @@
+predict: bacth size: 1, 
+         GPU memory: 3.27GB
+         Velocity: 1 images/1s 
+         GPU: GeForce GTX 1650 Nvidia
+            

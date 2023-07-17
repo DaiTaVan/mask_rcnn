@@ -140,7 +140,7 @@ class TpuExecutor(object):
     if self._params.eval.use_json_file:
       # val_json_file = os.path.join(self._params.model_dir,
       #                              'eval_annotation_file.json')
-      val_json_file = '/media/tavandai/MAIN_WORKING_UBUNTU/Startup/image_tagging/datasets/imaterialist-fashion-2021-fgvc8/kaggle-imaterialist2020-model/data_processed/test_coco.json'
+      val_json_file = 'data_processed/test_coco.json'
       if self._params.eval.val_json_file:
         tf.gfile.Copy(
             self._params.eval.val_json_file, val_json_file, overwrite=True)
@@ -245,10 +245,12 @@ class TpuExecutor(object):
         input_fn=input_fn,
         checkpoint_path=checkpoint_path,
         yield_single_examples=False)
-
+    count = 0
     while True:
       try:
+        print(f"Process bash {count}")
         outputs = six.next(predictor)
+        count += 1
       except StopIteration:
         break
 

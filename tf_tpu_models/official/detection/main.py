@@ -70,7 +70,7 @@ def main(argv):
   del argv  # Unused.
 
   params = factory.config_generator(FLAGS.model)
-  FLAGS.config_file = '/media/tavandai/MAIN_WORKING_UBUNTU/Startup/image_tagging/datasets/imaterialist-fashion-2021-fgvc8/kaggle-imaterialist2020-model/configs/spinenet/sn143-imat-v2.yaml'
+  FLAGS.config_file = '/media/tavandai/MAIN_WORKING_UBUNTU/Startup/image_tagging/datasets/imaterialist-fashion-2021-fgvc8/mask_rcnn/configs/spinenet/sn143-imat-v2.yaml'
   if FLAGS.config_file:
     params = params_dict.override_params_dict(
         params, FLAGS.config_file, is_strict=True)
@@ -104,7 +104,8 @@ def main(argv):
   print('params_override:',FLAGS.params_override)
   print('FLAGS.predict_file_pattern:', FLAGS.predict_file_pattern)
   params.use_tpu = False
-  params.eval.val_json_file = '/media/tavandai/MAIN_WORKING_UBUNTU/Startup/image_tagging/datasets/imaterialist-fashion-2021-fgvc8/kaggle-imaterialist2020-model/data_processed/test_coco.json'
+  params.eval.val_json_file = '/media/tavandai/MAIN_WORKING_UBUNTU/Startup/image_tagging/datasets/imaterialist-fashion-2021-fgvc8/mask_rcnn/data_processed/test_coco.json'
+  params.predict.predict_batch_size = 1
   # Only run spatial partitioning in training mode.
   if FLAGS.mode != 'train':
     params.train.input_partition_dims = None
