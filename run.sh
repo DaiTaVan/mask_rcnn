@@ -4,7 +4,7 @@ cp data_original/test_coco.json data_processed
 
 if [ -n "{{MODEL}}" ] && [ -n "{{DATASET_PREFIX}}" ]  && [ -n "{{OUTPUT_DIR}}" ] && [ -n "{{TPU}}" ] && [ -n "{{STEP}}" ]; then
     export STORAGE_BUCKET=gs://kaggle-imaterialist2020-data-europe-west4
-    export MODEL_DIR=${STORAGE_BUCKET}/training/{{MODEL}}
+    export MODEL_DIR="/media/tavandai/MAIN_WORKING_UBUNTU/Startup/image_tagging/datasets/imaterialist-fashion-2021-fgvc8/mask_rcnn/output"
     export FILE_PATTERN="/media/tavandai/MAIN_WORKING_UBUNTU/Startup/image_tagging/datasets/imaterialist-fashion-2021-fgvc8/mask_rcnn/data_processed/tfrecord/test-*"
     export OUTPUT_DIR=${STORAGE_BUCKET}/predictions/{{OUTPUT_DIR}}/{{MODEL}}_{{STEP}}
 
